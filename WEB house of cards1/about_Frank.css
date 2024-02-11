@@ -1,0 +1,446 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    background-color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav {
+    background-color: rgba(3, 3, 59, 0.663);
+    box-shadow: 3px 3px 5px black;
+}
+
+nav ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav li {
+    height: 60px;
+}
+
+nav a {
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.37);
+}
+
+nav li:first-child {
+    margin-right: auto;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(0, 21, 139, 0.3);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px black;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.sidebar li {
+    width: 100%;
+}
+
+.sidebar a {
+    width: 100%;
+}
+
+.menu-button {
+    display: none;
+}
+
+.brgr {
+    color: azure;
+}
+
+.logo {
+    width: 110px;
+    padding-left: 10px;
+    background-color: none;
+}
+
+.house_of_cards {
+    margin-top: 30px;
+    width: 250px;
+    margin-right: 45px;
+    float: right;
+}
+
+.Franko {
+    margin-top: 30px;
+    width: 50%;
+    margin-right: 0px;
+    float: left;
+}
+
+#section1,
+#section2 {
+    color: aliceblue;
+    padding: 20px;
+}
+
+#who {
+    text-align: center;
+    margin-top: 30px;
+}
+
+#p1,
+#p2 {
+    text-align: justify;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 2;
+    margin: 20px;
+}
+
+
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 30%;
+    margin: 0 auto;
+    float: right;
+    margin-right: 120px;
+}
+
+td,
+th {
+    text-align: center; 
+    padding: 8px;
+    border: 1px solid #dddddd;
+}
+
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    font-weight: 400;
+}
+#tdF1{
+    color: red;
+ }
+ #tdF2{
+    color: white;
+ }
+ .blok {
+    width: autopx;
+    margin: 0 auto;
+    text-align: center;
+    
+    
+}
+
+.line {
+    border-bottom: 1px solid #ccc; 
+    margin: 010px 0; 
+}
+
+.Topp{
+    margin-left: 20px;
+}
+
+#foott{
+    float: right;
+    width: 25%;
+}
+
+#mintext{
+    text-align: right;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #cc0606;
+   
+    
+}
+footer{
+    background-color: #1b396284;
+    color: white;
+}
+.button {
+    
+    all: unset;
+    display: flex;
+    float: right;
+    align-items: right;
+    position: relative;
+    padding: 0.6em 2em;
+    border: rgb(129, 11, 4) solid 0.15em;
+    border-radius: 0.25em;
+    color: rgb(153, 13, 11);
+    font-size: 1.5em;
+    font-weight: 600;
+    cursor: pointer;
+    overflow: hidden;
+    transition: border 300ms, color 300ms;
+    user-select: none;
+    left: -3%;
+  }
+  
+  .button p {
+    z-index: 1;
+  }
+  .a{
+    color: rgb(153, 13, 11);
+    
+  }
+  
+  .button:hover {
+    color: #212121;
+  }
+  
+  .button:active {
+    border-color: teal;
+  }
+  
+  .button::after, .button::before {
+    content: "";
+    position: absolute;
+    width: 9em;
+    aspect-ratio: 1;
+    background: rgb(250, 29, 0);
+    opacity: 50%;
+    border-radius: 50%;
+    transition: transform 500ms, background 300ms;
+  }
+  
+  .button::before {
+    left: 0;
+    transform: translateX(-8em);
+  }
+  
+  .button::after {
+    right: 0;
+    transform: translateX(8em);
+  }
+  
+  .button:hover:before {
+    transform: translateX(-1em);
+  }
+  
+  .button:hover:after {
+    transform: translateX(1em);
+  }
+  
+  .button:active:before,
+  .button:active:after {
+    background: teal;
+  }
+
+  #house{
+    height: 50%;
+  }
+
+
+  
+
+
+
+
+
+/* Tablet verze */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+    .hideOnMobile {
+        display: none;
+    }
+
+    .menu-button {
+        display: block;
+    }
+
+    .house_of_cards {
+        width: 250px;
+        float: none;
+        margin: 0 auto;
+        margin-top: 30px;
+        display: block;
+    }
+
+    .Franko {
+        margin-top: 50px;
+        width: 100%;
+        float: none;
+        display: block;
+        margin: 0 auto;
+    }
+
+    #who {
+        margin-top: 30px;
+    }
+
+    #p1,
+    #p2 {
+        margin: 20px;
+    }
+
+    #p2 {
+        margin-top: 50px;
+    }
+
+    #text-and-table {
+        display: flex;
+        flex-direction: column;
+        float:none;
+    }
+
+    #table-container {
+        text-align: center;
+        margin-top: 20px;
+    }
+    table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 40%;
+        margin: 0 auto;
+        float: none;
+        
+    
+    }
+    #foott{
+        float: none;
+        width: 100%;
+    }
+   
+}
+
+/* Mobilní verze */
+@media screen and (max-width: 600px) {
+    .sidebar {
+        width: 100%;
+    }
+
+    .hideOnMobile {
+        display: none;
+    }
+
+    .menu-button {
+        display: block;
+    }
+
+    .house_of_cards {
+        width: 250px;
+        float: none;
+        margin: 0 auto;
+        display: block;
+        margin-top: 30px;
+    }
+
+    .Franko {
+        margin-top: 50px;
+        width: 100%;
+        float: none;
+        display: block;
+        margin: 0 auto;
+    }
+
+    
+    #p1,
+    #p2 {
+        text-align: justify;
+        margin-top: 20px;
+    }
+
+    #p2 {
+        margin-top: 50px;
+    }
+
+    #text-and-table {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #table-container {
+        text-align: center;
+        margin-top: 20px;
+    }
+    table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 40%;
+        margin: 0 auto;
+        float: none;
+        
+    
+    }
+    #house {
+        display: block; 
+        margin: 0 auto; 
+        margin-top: 30px; 
+        max-width: 100%; 
+        height: auto; 
+      }
+      
+      .button{
+        float: none;
+        left: 10%;
+        height: 50%;
+      }
+      
+          
+          #foott{
+              float: none;
+              width: 100%;
+          }
+}
+
+/* Desktop verze */
+@media screen and (min-width: 1025px) {
+    #who {
+        margin-top: 200px;
+    }
+
+    #p2 {
+        text-align: justify;
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+        line-height: 2;
+        max-width: 40%;
+        padding-top: -800px;
+        padding-left: 120px;
+    }
+
+    #table-container {
+        text-align: right; 
+        margin-top: 20px;
+        padding-left: 10px;
+        
+    }
+
+
+    .blok {
+        width: 40%;
+        margin: 0 auto;
+        text-align: center;
+        margin-left: 140px; 
+    }
+
+    .Topp{
+        margin-left: 140px;
+    }
+}
